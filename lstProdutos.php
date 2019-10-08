@@ -40,7 +40,7 @@
                     <td><?php echo $row['valor'] ?></td>
                     <td>
                         <button type="button" class="btn btn-info" 
-                        onclick="javascript:location.href='frmEditProd.php?id='+<?php echo$row['id_produtos']?>"> 
+                        onclick="javascript:location.href='frmEditProd.php?id_produtos='+<?php echo$row['id_produtos']?>"> 
                             Editar
                         </button>
                     </td> 
