@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>
+            Inserção de Produtos
+        </title>
+    </head>
+    <body class="container jumbotron">
+        <h1>Inserir Novo Produto</h1>
+        <form id="frmInsProd" name="frmInsProd" method="POST" action="insProd.php">
+            <div class="form-group">
+                <label for="lblDesc">Descrição:</label>
+                <input type="text" class="form-control" id="txtDesc" name="txtDesc">
+            </div>
+            <div class="form-group">
+                <label for="lblQtde">Quantidade:</label>
+                <input type="number" class="form-control" id="txtQtde" name="txtQtde">
+            </div>
+            <div class="form-group">
+                <label for="lblVal">Valor:</label>
+                <input type="text" class="form-control" id="txtVal" name="txtVal">
+            </div>
+            <div class=form-group>
+                <input type="submit" id="btnGrv" name="btnGrv" class="btn btn-success" value="Gravar">
+                <input type="reset" id="btnLimpar" name="btnLimpar" class="btn btn-secondary" value="Limpar">
+                <input type="button" class="btn btn-dark" id="btnVol" name="btnVol" value="Voltar"
+                    onclick="javascript:location.href='lstProdutos.php'">
+            </div>
+        </form>
+    </body>
+</html>

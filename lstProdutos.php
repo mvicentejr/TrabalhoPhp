@@ -11,7 +11,7 @@
     </head>
     <body>
         <div class="container jumbotron">
-        <h2><center>Lista de Produtos</h2>
+        <h1><center>Lista de Produtos</h1>
         <br/>
         <input type="button" id="btnNovo" name="btnNovo" class="btn btn-success" value="Novo Produto" onclick="javascript: location.href='frmInsProd.html'">
         <br><br>
@@ -46,7 +46,7 @@
                     </td> 
                     <td>
                         <button type="button" class="btn btn-danger"
-                        onclick="javascript:location.href='frmRmProd.php?id=' + <?php echo $row['id_produtos']?>">
+                        onclick="javascript:location.href='frmRemProd.php?id_produtos='+<?php echo $row['id_produtos']?>">
                             Remover
                         </button>
                     </td>
@@ -55,7 +55,7 @@
 
         </table> 
         <br><br>
-        <a href="menu.php" class="btn btn-primary">Voltar</a>
+        <a href="menu.php" class="btn btn-dark">Voltar</a>
         </div>       
     </body>
 </html>

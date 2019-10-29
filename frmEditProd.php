@@ -19,9 +19,9 @@
         <title>Edição de Produtos</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
-    <body class="container">
+    <body class="container jumbotron"">
         <div>
-            <h1>Editar Produtos</h1>
+            <h1><center>Editar Produtos</h1>
             <br>
             <form id="frmEditProd.php" name="frmEditProd" method="POST" action="editProd.php" class="control-label">
                 <div class="form-group">
@@ -42,10 +42,9 @@
                 </div>
                 <br>
                 <div class="form-group">
-                    <input type="submit" class="btn btn-Success" id="btnGravar" name="btnGravar" 
-                    value="Gravar">
-                    <input type="button" class="btn btn-info" id="btnVol" name="btnVol" value="Voltar"
-                    onclick="javascript:location.href='lstProd.php'">            
+                    <input type="submit" class="btn btn-Success" id="btnGravar" name="btnGravar" value="Gravar">
+                    <input type="button" class="btn btn-dark" id="btnVol" name="btnVol" value="Voltar"
+                    onclick="javascript:location.href='lstProdutos.php'">            
                 </div>
             </form>
         </div>
