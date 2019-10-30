@@ -55,7 +55,7 @@
 
         </table> 
         <br><br>
-        <a href="menu.php" class="btn btn-dark">Voltar</a>
+        <a href="menu.html" class="btn btn-dark">Voltar</a>
         </div>       
     </body>
 </html>
