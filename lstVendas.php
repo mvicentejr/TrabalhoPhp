@@ -13,7 +13,7 @@
         <div class="container jumbotron">
         <h1><center>Lista de Vendas</h1>
         <br/>
-        <input type="button" id="btnNovo" name="btnNovo" class="btn btn-success" value="Nova Venda" onclick="javascript: location.href='frmInsVenda.html'">
+        <input type="button" id="btnNovo" name="btnNovo" class="btn btn-success" value="Nova Venda" onclick="javascript: location.href='frmInsVenda.php'">
         <br><br>
         <table class="table table-striped">
             <tr class="table">
@@ -39,7 +39,7 @@
                     <td><?php echo $row['data_venda'] ?></td>
                     <td>
                         <button type="button" class="btn btn-info" 
-                        onclick="javascript:location.href='frmEditVenda.php?id_vendas='+<?php echo$row['id_vendas']?>"> 
+                        onclick="javascript:location.href='frmEditProdVendas.php?id_vendas='+<?php echo$row['id_vendas']?>"> 
                             Editar
                         </button>
                     </td> 

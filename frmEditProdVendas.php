@@ -31,6 +31,8 @@
         <div>
             <h2><center> Produtos Vendidos</h2>
             <br><br>
+            <input type="button" id="btnNovo" name="btnNovo" class="btn btn-success" value="Adicionar Produto" onclick="javascript: location.href='frmInsProdVenda.html'">
+            <br><br>
             <table class="table table-striped">
             <tr class="table">
                 <thead class="thead-dark">
@@ -38,6 +40,8 @@
                     <th>Quantidade</th>
                     <th>Unitário</th>
                     <th>Total</th>
+                    <th>Editar</th>
+                    <th>Remover</th>
                 </thead>
             </tr>
             <?php
@@ -56,6 +60,18 @@
                 <td><?php echo $row['total'] ?></td>
                 <?php $total = $row['total']; 
                 $tgeral = $tgeral + $total; ?>
+                <td>
+                    <button type="button" class="btn btn-info" 
+                    onclick="javascript:location.href='frmEditProdVenda.php?venda='+<?php echo$row['venda']?>"> 
+                        Editar
+                    </button>
+                </td> 
+                <td>
+                    <button type="button" class="btn btn-danger"
+                    onclick="javascript:location.href='frmRemProdVenda.php?venda='+<?php echo $row['venda']?>">
+                        Remover
+                    </button>
+                </td>
             </tr>
             <?php } ?>
             </table>
