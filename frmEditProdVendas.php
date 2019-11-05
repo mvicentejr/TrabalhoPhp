@@ -31,7 +31,12 @@
         <div>
             <h2><center> Produtos Vendidos</h2>
             <br><br>
-            <input type="button" id="btnNovo" name="btnNovo" class="btn btn-success" value="Adicionar Produto" onclick="javascript: location.href='frmInsProdVenda.html'">
+            <button type="button" class="btn btn-success" 
+                onclick="javascript:location.href='frmInsProdVenda.php?id_vendas='+<?php echo $id_vendas?>"> 
+                Adicionar Produto
+            </button>
+            <!-- <input type="button" id="btnNovo" name="btnNovo" class="btn btn-success" value="Adicionar Produto"
+            onclick="javascript:location.href='frmInsProdVenda.php'"> -->
             <br><br>
             <table class="table table-striped">
             <tr class="table">
