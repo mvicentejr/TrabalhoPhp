@@ -36,13 +36,11 @@
             </div>
             <div class="form-group">
                 <label for="lblTotal">Total:</label>
-                <input type="text" class="form-control" id="txtVal" name="txtVal">
+                <input type="text" class="form-control" id="txtTotal" name="txtTotal">
             </div>
             <div class=form-group>
                 <input type="submit" id="btnGrv" name="btnGrv" class="btn btn-success" value="Gravar">
                 <input type="reset" id="btnLimpar" name="btnLimpar" class="btn btn-warning" value="Limpar">
-                <input type="button" class="btn btn-dark" id="btnVol" name="btnVol" value="Voltar"
-                    onclick="javascript:location.href='frmEditProdVendas.php'">
             </div>
         </form>
     </body>

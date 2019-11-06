@@ -35,8 +35,6 @@
                 onclick="javascript:location.href='frmInsProdVenda.php?id_vendas='+<?php echo $id_vendas?>"> 
                 Adicionar Produto
             </button>
-            <!-- <input type="button" id="btnNovo" name="btnNovo" class="btn btn-success" value="Adicionar Produto"
-            onclick="javascript:location.href='frmInsProdVenda.php'"> -->
             <br><br>
             <table class="table table-striped">
             <tr class="table">
@@ -45,7 +43,6 @@
                     <th>Quantidade</th>
                     <th>Unitário</th>
                     <th>Total</th>
-                    <th>Editar</th>
                     <th>Remover</th>
                 </thead>
             </tr>
@@ -64,13 +61,8 @@
                 <td><?php echo $row['valor'] ?></td>
                 <td><?php echo $row['total'] ?></td>
                 <?php $total = $row['total']; 
-                $tgeral = $tgeral + $total; ?>
-                <td>
-                    <button type="button" class="btn btn-info" 
-                    onclick="javascript:location.href='frmEditProdVenda.php?venda='+<?php echo$row['venda']?>"> 
-                        Editar
-                    </button>
-                </td> 
+                $tgeral = $tgeral + $total; 
+                ?>
                 <td>
                     <button type="button" class="btn btn-danger"
                     onclick="javascript:location.href='frmRemProdVenda.php?venda='+<?php echo $row['venda']?>">
@@ -83,7 +75,7 @@
         </div>
         <div class="form-group">
             <br>
-            <p><b>Total Geral: </b><?php echo $tgeral ?></p>
+            <p><b>Total Geral: </b>R$ <?php echo $tgeral ?></p>
             <br>
             <input type="button" class="btn btn-dark" id="btnVol" name="btnVol" value="Voltar"
             onclick="javascript:location.href='lstVendas.php'">            

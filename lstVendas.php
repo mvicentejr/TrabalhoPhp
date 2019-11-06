@@ -39,19 +39,19 @@
                     <td><?php echo $row['data_venda'] ?></td>
                     <td>
                         <button type="button" class="btn btn-info" 
-                        onclick="javascript:location.href='frmEditProdVendas.php?id_vendas='+<?php echo$row['id_vendas']?>"> 
+                        onclick="javascript:location.href='frmEditProdVendas.php?id_vendas='+<?php echo $row['id_vendas']?>"> 
                             Editar
                         </button>
                     </td> 
                     <td>
                         <button type="button" class="btn btn-warning" 
-                        onclick="javascript:location.href='lstProdVendas.php?id_vendas='+<?php echo$row['id_vendas']?>"> 
+                        onclick="javascript:location.href='lstProdVendas.php?id_vendas='+<?php echo $row['id_vendas']?>"> 
                             Mostrar
                         </button>
                     </td> 
                     <td>
                         <button type="button" class="btn btn-danger"
-                        onclick="javascript:location.href='frmRemVendas.php?id_vendas='+<?php echo $row['id_vendas']?>">
+                        onclick="javascript:location.href='frmRemVenda.php?id_vendas='+<?php echo $row['id_vendas']?>">
                             Remover
                         </button>
                     </td>
