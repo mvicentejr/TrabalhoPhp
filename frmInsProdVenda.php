@@ -34,13 +34,11 @@
                 <label for="lblQtde">Quantidade:</label>
                 <input type="number" class="form-control" id="txtQtde" name="txtQtde">
             </div>
-            <div class="form-group">
-                <label for="lblTotal">Total:</label>
-                <input type="text" class="form-control" id="txtTotal" name="txtTotal">
-            </div>
             <div class=form-group>
                 <input type="submit" id="btnGrv" name="btnGrv" class="btn btn-success" value="Gravar">
                 <input type="reset" id="btnLimpar" name="btnLimpar" class="btn btn-warning" value="Limpar">
+                <input type="button" class="btn btn-dark" id="btVol" name="btVol" value="Voltar"
+                    onclick="javascript:location.href='frmEditProdVendas.php?id_vendas='+ <?php echo $id_vendas ?>">
             </div>
         </form>
     </body>

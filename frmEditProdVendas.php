@@ -49,10 +49,11 @@
             <?php
                 $pdo = Banco::conectar();
                 $venda = trim($_GET['id_vendas']);
-                $sql = 'select produtos.descricao, produtos_vendas.quantidade, produtos.valor, total FROM produtos_vendas INNER JOIN produtos ON (produto=produtos.id_produtos) WHERE venda=?';
+                $sql = 'select produtos_vendas.produto, produtos.descricao, produtos_vendas.quantidade, produtos.valor, total FROM produtos_vendas INNER JOIN produtos ON (produto=produtos.id_produtos) WHERE venda=?';
                 $q = $pdo -> prepare($sql);
                 $q -> execute(array($venda)); 
                 while ($row = $q->fetch(PDO::FETCH_ASSOC)){ 
+                    $produto = $row['produto'];
                 
             ?>
             <tr> 
@@ -65,7 +66,7 @@
                 ?>
                 <td>
                     <button type="button" class="btn btn-danger"
-                    onclick="javascript:location.href='frmRemProdVenda.php?venda='+<?php echo $row['venda']?>">
+                    onclick="javascript:location.href='frmRemProdVenda.php?venda='+<?php echo $venda?>+'&produto='+<?php echo $produto ?>">
                         Remover
                     </button>
                 </td>
