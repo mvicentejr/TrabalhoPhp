@@ -1,7 +1,7 @@
 <?php
-    /*session_start();
+    session_start();
     if(!isset($_SESSION['user']))
-    header("location: index.html");*/
+    header("location: login.html");
 ?>
 
 <html>
@@ -60,7 +60,7 @@
 
         </table> 
         <br><br>
-        <a href="menu.html" class="btn btn-dark">Voltar</a>
+        <a href="menu.php" class="btn btn-dark">Voltar</a>
         </div>       
     </body>
 </html>

@@ -1,4 +1,8 @@
 <?php
+    session_start();
+    if(!isset($_SESSION['user']))
+    header("location: login.html");
+
     include 'banco.php';
     $venda = trim($_GET['venda']);  
     $produto = trim($_GET['produto']);  
@@ -48,6 +52,7 @@
                 <span class="font-weight-bold">Quantidade: </span>
                 <span class="font-weight-normal"> <?php echo $qtde ?> </span>
             </label>
+            <input type="hidden" name="qtde" value="<?php echo $qtde ?>">
         </div>
         <div class="form-group">
             <label for="lblTotal">

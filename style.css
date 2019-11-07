@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+
+.p {
+    font-family: 'Abel', sans-serif;
+    font-weight: 550;
+}
+
+
+.backone {
+    background-color: rgb(150, 150, 150);
+    /* background-image: url("img/quedupla.jpg");
+    background-repeat: no-repeat;
+    background-position-x: -200px;
+    background-size: cover; */
+}
+
+.gradiente-cinza{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(150, 150, 150));
+    background-position-x: -200px;
+    position:absolute;
+	top:0;
+    left:0;
+    width:100%;
+	height:100%;
+}
+
+.positionlog {
+    margin-left: 500px;
+    margin-top: 90px;
+    box-shadow: 10px 10px 3px #2E2E2E;
+}
+
+.positionlog_cliente{
+    margin-left: 400px;
+    background-color: tomato;
+}
+
+div.backcadastro {
+    position: fixed;
+    height: 100%;
+    width: 40%;
+    background-color: white;
+}
+
+img.back{
+    margin-left: 300px;
+}
+
+#tabela{
+    width:100%;
+    border:solid 1px;
+    text-align:left;
+    border-collapse:collapse; 
+}
+ 
+#tabela tbody tr{
+    border:solid 1px;
+    height:30px;
+    cursor:pointer;
+}
+ 
+#tabela thead{
+    background:beige;
+}
+ 
+#tabela thead th:nth-child(1){
+    width:100px;
+}
+ 
+#tabela input{
+    color:navy;
+    width:100%;
+}

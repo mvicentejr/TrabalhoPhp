@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['user']))
+    header("location: login.html");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,16 +16,17 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <title>Loja Funshom</title>
 </head>
-<body">
+<body>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 
 <nav>
   <div class="toggle"><i class="fas fa-bars menu"></i></div>
   <ul>
-    <li><a href="#">Clientes</a></li>
+    <li><a href="listarcliente.php">Clientes</a></li>
     <li><a href="lstProdutos.php">Produtos</a></li>
     <li><a href="lstVendas.php">Vendas</a></li>
-    <li><a href="#">Logout</a></li>
+    <li><a href="cadastrouser.html">Usuários</a></li>
+    <li><a href="logout.php">Sair</a></li>
   </ul>
 </nav>  
     

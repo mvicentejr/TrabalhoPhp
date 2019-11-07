@@ -1,4 +1,5 @@
 <?php
+    
     $id_produtos = trim($_POST['id_produtos']);
     $desc = trim($_POST['txtDesc']);
     $qtd = trim($_POST['txtQtd']);

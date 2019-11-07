@@ -1,4 +1,8 @@
 <?php
+    session_start();
+    if(!isset($_SESSION['user']))
+    header("location: login.html");
+
     include 'banco.php';
     $id_vendas = trim($_GET['id_vendas']);  
     $pdo = Banco::conectar();   

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Cliente</title> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="backone">
+
+        <div class="jumbotron col-md-5 positionlog_cliente">
+
+            <form id="cadastro" name="cadastro" method="POST" action="inserircliente.php">
+
+                <div class="form-group">
+                    <label for="labelNome">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome">
+                </div>
+
+                <div class="form-group">
+                    <label for="labelCpf">Cpf</label>
+                    <input type="text" class="form-control" id="labelCpf" name="cpf">
+                </div>
+
+                <div class="form-group">
+                    <label for="labelEndereco">Endereço</label>
+                    <input type="text" class="form-control" id="labelEndereco" name="endereco">
+                </div>
+
+                <div class="form-group">
+                    <label for="labelCidade">Cidade</label>
+                    <input type="text" class="form-control" id="labelCidade" name="cidade">
+                </div>
+
+                <div class="form-group">
+                    <label for="labelEstado">Estado</label>
+                    <input type="text" class="form-control" id="labelEstado" name="estado">
+                </div>
+
+                <div class="form-group">
+                    <label for="labelDataNascimento">Data Nascimento</label>
+                    <input type="date" class="form-control" id="labelDataNascimento" name="data_nascimento">
+                </div>
+
+                <input type="submit" id="buttonGravar" name="buttonGravar" class="btn btn-success" value="Gravar">
+                <input type="reset" id="buttonLimpar" name="buttonLimpar" class="btn btn-primary" value="Limpar">   
+
+            </form>
+
+        </div>
+    
+</body>
+</html>

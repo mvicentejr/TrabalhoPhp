@@ -1,4 +1,8 @@
 <?php
+    session_start();
+    if(!isset($_SESSION['user']))
+    header("location: login.html");
+
     $id_vendas = trim($_GET['id_vendas']);    
 ?>
 <html>
