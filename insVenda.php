@@ -9,7 +9,12 @@
         $sql = "Insert INTO vendas (cliente, data_venda) values(? ,?);";
         $qry = $pdo -> prepare($sql);
         $qry -> execute(array($cliente, $date));
+        $sql = "Select id_vendas from vendas where cliente=? and data_venda=?;";
+        $qry = $pdo -> prepare($sql);
+        $qry -> execute(array($cliente, $date));
+        $data = $qry->fetch(PDO::FETCH_ASSOC);
+        $id_vendas = $data['id_vendas'];
         Banco::desconectar();
     }
-    header("location: lstVendas.php")
+    header("location: frmEditProdVendas.php?id_vendas=".$id_vendas)
 ?>
