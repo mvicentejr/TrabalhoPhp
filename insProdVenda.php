@@ -12,6 +12,7 @@
     $qtdprod = $data['quantidade'];
     $valor = $data['valor'];
     $total = $qtde * $valor;
+    $qtdenova = $data['quantidade'] - $qtde;
     Banco::desconectar();
     
     if ($qtdprod >= $qtde){
@@ -21,6 +22,9 @@
             $sql = "Insert INTO produtos_vendas (venda, produto, quantidade, total) values(? ,?, ?, ?);";
             $qry = $pdo -> prepare($sql);
             $qry -> execute(array($venda, $produto, $qtde, $total));
+            $sql = "UPDATE produtos SET quantidade=? WHERE id_produtos=?; ";
+            $qry = $pdo -> prepare($sql);
+            $qry -> execute(array($qtdenova, $produto));
             Banco::desconectar(); 
         }
         

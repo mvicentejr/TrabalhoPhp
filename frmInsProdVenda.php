@@ -25,8 +25,8 @@
                     $sql = 'select * FROM produtos order by id_produtos';
                     $lista = $pdo -> query($sql);
                     foreach ($lista as $row){
-                     ?>
-                     <option value="<?php echo $row['id_produtos']?> "><?php echo $row['descricao'] ?></option>
+                    ?>
+                     <option value="<?php echo $row['id_produtos']?> "><?php echo ($row['descricao'])?></option>
                     <?php } ?>
                 </select>
             </div>
@@ -34,6 +34,7 @@
                 <label for="lblQtde">Quantidade:</label>
                 <input type="number" class="form-control" id="txtQtde" name="txtQtde">
             </div>
+            <br><br>
             <div class=form-group>
                 <input type="submit" id="btnGrv" name="btnGrv" class="btn btn-success" value="Gravar">
                 <input type="reset" id="btnLimpar" name="btnLimpar" class="btn btn-warning" value="Limpar">
