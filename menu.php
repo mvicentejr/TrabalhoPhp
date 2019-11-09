@@ -19,9 +19,9 @@
 <body>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 
-<nav>
+<nav class="text-center">
   <div class="toggle"><i class="fas fa-bars menu"></i></div>
-  <ul>
+  <ul >
     <li><a href="listarcliente.php">Clientes</a></li>
     <li><a href="lstProdutos.php">Produtos</a></li>
     <li><a href="lstVendas.php">Vendas</a></li>

@@ -43,6 +43,7 @@
                     <th><input type="text" id="txtColuna5"/></th>
                     <th><input type="text" id="txtColuna6"/></th>
                     <th><input type="text" id="txtColuna7"/></th>
+                    <th></th>
                 </tr> 
         </thead>
                             <?php
@@ -65,7 +66,7 @@
             
             
             <td>
-                <button type="button" class="btn btn-warning" 
+                <button type="button" class="btn btn-info" 
                 onclick="javascript:location.href='telaeditar.php?id_cliente='+<?= $row['id_cliente']?>">Editar</button>
                 <button type="button" class="btn btn-danger" 
                 onclick="javascript:location.href='telaremover.php?id_cliente='+<?= $row['id_cliente']?>">Excluir</button>

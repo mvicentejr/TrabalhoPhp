@@ -19,8 +19,9 @@ if(($data['password']) === md5($password)){
     session_start();
     $_SESSION['user'] = $user;
     header("location: menu.php");
-    } else {
-        throw new Exception("Usuario e senha Errada", 1);
+    } else { 
+        header("location: login.html");
+        
     } 
 
 
